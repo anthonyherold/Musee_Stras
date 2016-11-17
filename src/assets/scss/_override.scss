@@ -1,17 +1,47 @@
 header {
+  position: relative;
   width: 100%;
-  height: 240px;
-  background-color: #d07236;
+  height: 720px;
+  z-index: 2;
 
   .marge-top {
     margin-top: 60px;
   }
+
+  li a {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 20px;
+  }
+
+  li a:hover {
+    text-transform: uppercase;
+    color: #dfbb81;
+  }
+
+  .menu1 {
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .menu2 {
+    background-color: #343431;
+    opacity: 0.8;
+  }
+  .menu3 {
+    background-color: #5b5b57;
+    opacity: 0.8;
+  }
 }
 
 .slideryo {
+  position: absolute;
+  background-image: url(../img/slide_1.png);
+  top: 0;
+  padding-top: 400px;
   width: 100%;
-  height: 500px;
-  background-color: #449de6;
+  height: 660px;
+  background-size: cover;
 
   h1{
     font-size: 28px;
@@ -28,7 +58,6 @@ header {
 
   width: 100%;
   height: auto;
-  background-color: #38dd61;
 
   .documentsections {
     position: relative;
@@ -46,10 +75,18 @@ header {
     min-width: 100%;
   }
 
+  img:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+
   figcaption {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
     position: absolute;
     bottom: 10px;
-    left: 40px;
+    left: 30px;
     text-transform: uppercase;
   }
 }
